@@ -16,25 +16,4 @@ Escalates to team leads when unclear
 
 TLDR :
 Bug Report → Extract Context → Find File Owners → (experimental Score Expertise) → Check Availability → Assign + Notify
-
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   GitHub Repo   │────│  Change Detector │────│  AI Orchestrator│
-│   (Webhooks)    │    │   (Event Bus)    │    │   (LangChain)   │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                 │                        │
-                       ┌─────────▼─────────┐             │
-                       │  Code Analyzer    │             │
-                       │  (AST Parser)     │             │
-                       └─────────┬─────────┘             │
-                                 │                        │
-                       ┌─────────▼─────────┐    ┌────────▼────────┐
-                       │ Documentation     │    │  AI Doc Writer  │
-                       │ Knowledge Base    │────│  (Claude/GPT)   │
-                       │ (Vector Store)    │    └─────────────────┘
-                       └───────────────────┘             │
-                                                ┌────────▼────────┐
-                                                │  Doc Repository │
-                                                │  (GitHub)│
-                                                └─────────────────┘
-
                                               
